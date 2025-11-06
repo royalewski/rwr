@@ -1,11 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://lwjpy1mxgdla"]
+[gd_scene load_steps=5 format=3 uid="uid://lwjpy1mxgdla"]
 
 [ext_resource type="Script" path="res://node_3d.gd" id="1_61lph"]
+[ext_resource type="PackedScene" uid="uid://bv1h8b1i5gq27" path="res://project_files/assets/models/scene.gltf" id="2_otsfn"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_jk6ut"]
 size = Vector3(0.1, 0.1, 0.1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_xhnp3"]
+resource_local_to_scene = true
 size = Vector3(0.1, 0.1, 0.1)
 
 [node name="Node3D" type="Node3D"]
@@ -26,6 +28,9 @@ tracker = &"right_hand"
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="XROrigin3D/RightController"]
 mesh = SubResource("BoxMesh_xhnp3")
+
+[node name="Sketchfab_Scene" parent="XROrigin3D/RightController" instance=ExtResource("2_otsfn")]
+transform = Transform3D(0.0999935, 0, -0.00113618, 0, 0.1, 0, 0.00113618, 0, 0.0999935, -0.773015, -0.487745, -1.03871)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

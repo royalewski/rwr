@@ -1,0 +1,11 @@
+Model Information:
+* title:	Hand Lowpoly
+* source:	https://sketchfab.com/3d-models/hand-lowpoly-30218b8bbd894b8db51c0e5a0ca4a331
+* author:	Alan Stivet Dart (https://sketchfab.com/alanstivetdart)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Hand Lowpoly" (https://sketchfab.com/3d-models/hand-lowpoly-30218b8bbd894b8db51c0e5a0ca4a331) by Alan Stivet Dart (https://sketchfab.com/alanstivetdart) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
