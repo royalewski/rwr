@@ -1,6 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://ua5gg11yu4yk"]
+[gd_scene load_steps=6 format=3 uid="uid://ua5gg11yu4yk"]
 
 [ext_resource type="Script" uid="uid://b3vi5l0op4mnt" path="res://node_3d.gd" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://c8w04grrvujb2" path="res://assets/models/takuba_a_tuareg_sword.glb" id="2_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://ndvy2b4yy68d" path="res://assets/models/medieval_shield.glb" id="2_h2yge"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_0xm2m"]
 
@@ -17,15 +19,23 @@ script = ExtResource("1_ig7tw")
 tracker = &"left_hand"
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="XROrigin3D/LeftController"]
+visible = false
 custom_aabb = AABB(0, 0, 0, 0.1, 0.1, 0.1)
 mesh = SubResource("BoxMesh_0xm2m")
+
+[node name="Sketchfab_Scene" parent="XROrigin3D/LeftController" instance=ExtResource("2_h2yge")]
+transform = Transform3D(-0.1, 0, -1.509958e-08, 0, 0.1, 0, 1.509958e-08, 0, -0.1, -0.056652494, 0.32978863, 0.005002849)
 
 [node name="RightController" type="XRController3D" parent="XROrigin3D"]
 tracker = &"right_hand"
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="XROrigin3D/RightController"]
+visible = false
 custom_aabb = AABB(0, 0, 0, 0.1, 0.1, 0.1)
 mesh = SubResource("BoxMesh_h2yge")
+
+[node name="Sketchfab_Scene" parent="XROrigin3D/RightController" instance=ExtResource("2_0xm2m")]
+transform = Transform3D(4.3711387e-10, -0.01, -1.5099579e-09, -0.01, -4.3711387e-10, -2.6469778e-24, -6.6002356e-17, 1.5099579e-09, -0.01, 0.05083841, -0.011772394, 0.011509903)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
