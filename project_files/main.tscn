@@ -13,17 +13,17 @@ script = ExtResource("1_ig7tw")
 
 [node name="XRCamera3D" type="XRCamera3D" parent="XROrigin3D"]
 
-[node name="left_hand" type="XRController3D" parent="XROrigin3D"]
+[node name="LeftController" type="XRController3D" parent="XROrigin3D"]
 tracker = &"left_hand"
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="XROrigin3D/left_hand"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="XROrigin3D/LeftController"]
 custom_aabb = AABB(0, 0, 0, 0.1, 0.1, 0.1)
 mesh = SubResource("BoxMesh_0xm2m")
 
-[node name="right_hand" type="XRController3D" parent="XROrigin3D"]
+[node name="RightController" type="XRController3D" parent="XROrigin3D"]
 tracker = &"right_hand"
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="XROrigin3D/right_hand"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="XROrigin3D/RightController"]
 custom_aabb = AABB(0, 0, 0, 0.1, 0.1, 0.1)
 mesh = SubResource("BoxMesh_h2yge")
 
